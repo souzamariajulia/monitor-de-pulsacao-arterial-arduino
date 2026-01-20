@@ -23,6 +23,7 @@ pokemon_t getStarter(int index) {
       pokemon.attackMin = 5;
       pokemon.attackMax = 8;
       pokemon.type = TYPE_FIRE;
+      
       break;
       
     case 2: // Squirtle
@@ -1853,7 +1854,7 @@ int getRandomPokemonFromRoute(int routeId, char* pokedex) {
 }
 
 int getTotalRoutes(void) {
-  return 39; // 25 routes + 14 special areas organized by game regions
+  return 39; // Total de rotas disponíveis
 }
 
 char isRouteComplete(int routeId, char* pokedex) {
