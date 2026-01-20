@@ -1,6 +1,6 @@
 #include <TimerOne.h>
-#include "kernel.h"
-#include "ctrDrv.h"
+#include "src/kernel/kernel.h"
+#include "src/controller/ctrDrv.h"
 
 
 void setup() {
