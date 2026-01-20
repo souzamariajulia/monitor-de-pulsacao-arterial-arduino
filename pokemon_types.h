@@ -6,7 +6,18 @@ typedef enum {
   TYPE_NORMAL,
   TYPE_GRASS,
   TYPE_FIRE,
-  TYPE_WATER
+  TYPE_WATER,
+  TYPE_BUG,
+  TYPE_FLYING,
+  TYPE_POISON,
+  TYPE_ELECTRIC,
+  TYPE_GROUND,
+  TYPE_FIGHTING,
+  TYPE_PSYCHIC,
+  TYPE_ICE,
+  TYPE_GHOST,
+  TYPE_ROCK,
+  TYPE_DRAGON
 } pokemon_type_t;
 
 // Pokémon structure
