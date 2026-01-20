@@ -1,10 +1,10 @@
 #ifndef CTRDRV_H
 #define CTRDRV_H
 #define QNTD_DRV 20
-#include "../include/dd_types.h"
-#include "../drivers/drv_led.h"
-#include "../drivers/drv_button.h"
-#include "../drivers/drv_lcd.h"
+#include "dd_types.h"
+#include "drv_led.h"
+#include "drv_button.h"
+#include "drv_lcd.h"
 
 #define DRV_FUNC_NOT_FOUND 42
 

@@ -1,7 +1,7 @@
 #ifndef DRV_BUTTON_H
 	#define DRV_BUTTON_H
-	#include "../include/dd_types.h"
-	#include "../kernel/kernel.h"
+	#include "dd_types.h"
+	#include "kernel.h"
 	#include <Arduino.h>
 	
 	//lista de funções do driver

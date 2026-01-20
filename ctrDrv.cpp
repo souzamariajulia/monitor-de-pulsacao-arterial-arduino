@@ -1,6 +1,6 @@
-#include "../include/dd_types.h"
+#include "dd_types.h"
 #include "ctrDrv.h"
-#include "../kernel/kernel.h"
+#include "kernel.h"
 
 static driver * drivers[QNTD_DRV];
 static char dLoaded;

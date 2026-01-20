@@ -1,6 +1,6 @@
 #ifndef STATE_MACHINE_H
 #define STATE_MACHINE_H
-#include "../../include/game_types.h"
+#include "game_types.h"
 
 char initStateMachine(void);
 void changeState(int newState);

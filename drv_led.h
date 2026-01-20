@@ -1,7 +1,7 @@
 #ifndef DRV_LED_H
 	#define DRV_LED_H
-	#include "../include/dd_types.h"
-	#include "../kernel/kernel.h"
+	#include "dd_types.h"
+	#include "kernel.h"
 	#include <Arduino.h>
 	
 	//lista de fun��es do driver

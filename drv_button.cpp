@@ -43,15 +43,18 @@ static char readButtonState(int buttonIndex, int *result) {
       return FAIL;
   }
   
-  // Read current state
+  // Read current state (LOW = pressed with pull-up)
   reading[buttonIndex] = digitalRead(pin);
   
-  // Debounce logic
+  // Debounce logic - only update state if reading has been stable
   if (reading[buttonIndex] != lastButtonState[buttonIndex]) {
+    // State changed, reset debounce timer
     lastDebounceTime[buttonIndex] = millis();
   }
   
+  // Only update buttonState if reading has been stable for DEBOUNCE_DELAY
   if ((millis() - lastDebounceTime[buttonIndex]) > DEBOUNCE_DELAY) {
+    // Reading has been stable, update the debounced state
     if (reading[buttonIndex] != buttonState[buttonIndex]) {
       buttonState[buttonIndex] = reading[buttonIndex];
     }
@@ -60,6 +63,7 @@ static char readButtonState(int buttonIndex, int *result) {
   lastButtonState[buttonIndex] = reading[buttonIndex];
   
   // Return inverted state (LOW = pressed due to pull-up)
+  // 1 = pressed, 0 = not pressed
   *result = (buttonState[buttonIndex] == LOW) ? 1 : 0;
   
   return SUCCESS;
